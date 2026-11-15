@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safety Stock Calculator — Formula and Worked Example</title>
+<meta name="description" content="How to calculate safety stock: the simple formula, a worked example with real numbers, and the common mistakes that set buffer stock too high or too low.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Purchasing Answers</a>
+    <nav class="pages" aria-label="Pages">
+      <a href="safety-stock-calculator.html">Safety Stock</a>
+      <a href="reorder-point-calculator.html">Reorder Point</a>
+      <a href="landed-cost-calculator.html">Landed Cost</a>
+      <a href="supplier-scorecard-template.html">Supplier Scorecard</a>
+      <a href="price-creep.html">Price Creep</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <article>
+    <h1>Safety stock calculator</h1>
+    <p class="byline">By Michael Olson, Senior Strategic Buyer, 15+ years in manufacturing purchasing.</p>
+
+    <div class="short-answer">
+      <p><strong>Short answer:</strong> Safety stock is the buffer you keep for late deliveries and high-use days. The simple formula is: (maximum daily use × maximum lead time) − (average daily use × average lead time). For most shop parts, this method is enough. You do not need statistics software.</p>
+    </div>
+
+    <h2>The formula</h2>
+    <p class="formula">Safety stock = (Max daily use × Max lead time in days) − (Avg daily use × Avg lead time in days)</p>
+    <p>Use your own records. Take daily use from the last 6 to 12 months. Take lead time from real receipts, not from the quote. The quote gives the promised lead time. The dock gives the true lead time.</p>
+
+    <h2>Worked example</h2>
+    <p>A shop uses a steel flat bar every day.</p>
+    <table>
+      <tr><th>Input</th><th>Value</th></tr>
+      <tr><td>Average daily use</td><td>50 pieces</td></tr>
+      <tr><td>Maximum daily use</td><td>70 pieces</td></tr>
+      <tr><td>Average lead time</td><td>10 days</td></tr>
+      <tr><td>Maximum lead time</td><td>14 days</td></tr>
+    </table>
+    <p>Step 1: 70 × 14 = 980. This is the worst case: high use and a late delivery.</p>
+    <p>Step 2: 50 × 10 = 500. This is the normal case.</p>
+    <p>Step 3: 980 − 500 = <strong>480 pieces of safety stock</strong>.</p>
+    <p>That buffer covers the gap between a normal week and a bad week. It does not cover a stopped mill or a lost shipment. No buffer covers every case. Set the buffer for the bad week, not for the disaster.</p>
+
+    <h2>Common mistakes</h2>
+    <ul>
+      <li><strong>Use the quoted lead time.</strong> Suppliers quote the best case. Use the longest real lead time from your receipts.</li>
+      <li><strong>Set one rule for all parts.</strong> A cheap bolt and a cast housing need different buffers. Set safety stock per part, or per part group.</li>
+      <li><strong>Never review the number.</strong> Use patterns change. Review safety stock at least once a year, and after any supplier change.</li>
+      <li><strong>Count stock you cannot use.</strong> Damaged, rusty, or wrong-revision stock is not a buffer. Count only good stock.</li>
+      <li><strong>Set the buffer by fear.</strong> One stock-out hurts. But a buffer set too high ties up cash on the shelf for years. Use the formula, not the memory of one bad day.</li>
+    </ul>
+
+    <h2>Next step</h2>
+    <p>Safety stock is one part of the reorder system. You also need the reorder point. See the <a href="reorder-point-calculator.html">reorder point calculator</a> page.</p>
+
+    <section class="funnel" aria-label="Free check and tools">
+      <h2>Start with the free check</h2>
+      <p>The <strong>Supplier Overpay Check</strong> is a free worksheet. You enter a few invoice lines. It flags lines where the price looks high. It takes about ten minutes.</p>
+      <p><a class="btn" href="https://darkgyft0.gumroad.com/l/supplier-overpay-check">Get the free Supplier Overpay Check</a></p>
+      <p>For this topic, the matching tool is the <strong>Inventory Min/Max &amp; Reorder Calculator</strong>. It sets safety stock, reorder point, min, and max for your full part list. You enter use and lead time. It does the math for each part.</p>
+      <p><a class="btn secondary" href="https://payhip.com/b/I5LpV">Inventory Min/Max &amp; Reorder Calculator — $29</a></p>
+    </section>
+  </article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>By Michael Olson, Senior Strategic Buyer, 15+ years in manufacturing purchasing.</p>
+    <p><a href="index.html">Home</a> · <a href="safety-stock-calculator.html">Safety Stock</a> · <a href="reorder-point-calculator.html">Reorder Point</a> · <a href="landed-cost-calculator.html">Landed Cost</a> · <a href="supplier-scorecard-template.html">Supplier Scorecard</a> · <a href="price-creep.html">Price Creep</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reorder Point Calculator — Formula, Example, and Min/Max in Plain Words</title>
+<meta name="description" content="How to calculate the reorder point: average daily use times lead time, plus safety stock. A worked example, and min and max levels in plain words.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Purchasing Answers</a>
+    <nav class="pages" aria-label="Pages">
+      <a href="safety-stock-calculator.html">Safety Stock</a>
+      <a href="reorder-point-calculator.html">Reorder Point</a>
+      <a href="landed-cost-calculator.html">Landed Cost</a>
+      <a href="supplier-scorecard-template.html">Supplier Scorecard</a>
+      <a href="price-creep.html">Price Creep</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <article>
+    <h1>Reorder point calculator</h1>
+    <p class="byline">By Michael Olson, Senior Strategic Buyer, 15+ years in manufacturing purchasing.</p>
+
+    <div class="short-answer">
+      <p><strong>Short answer:</strong> The reorder point is the stock level that triggers a new order. The formula is: (average daily use × lead time in days) + safety stock. When stock on hand falls to that number, you order. Order too late and you run out. Order too early and cash sits on the shelf.</p>
+    </div>
+
+    <h2>The formula</h2>
+    <p class="formula">Reorder point = (Avg daily use × Lead time in days) + Safety stock</p>
+    <p>The first part covers normal use while you wait for the delivery. The safety stock covers the bad week: high use or a late truck. If you do not have a safety stock number yet, see the <a href="safety-stock-calculator.html">safety stock calculator</a> page first.</p>
+
+    <h2>Worked example</h2>
+    <p>Use the same steel flat bar from the safety stock page.</p>
+    <table>
+      <tr><th>Input</th><th>Value</th></tr>
+      <tr><td>Average daily use</td><td>50 pieces</td></tr>
+      <tr><td>Lead time</td><td>10 days</td></tr>
+      <tr><td>Safety stock</td><td>480 pieces</td></tr>
+    </table>
+    <p>Step 1: 50 × 10 = 500. This is the stock you use during a normal lead time.</p>
+    <p>Step 2: 500 + 480 = <strong>980 pieces</strong>.</p>
+    <p>When stock on hand falls to 980 pieces, place the order. In a normal cycle, the delivery arrives as you reach the safety stock. You do not touch the buffer unless the week goes bad.</p>
+
+    <h2>Min and max in plain words</h2>
+    <p>Many shops do not use a reorder point. They use a min and a max. The two systems do the same job.</p>
+    <ul>
+      <li><strong>Min</strong> is the floor. It is the lowest level you accept before you act. In most systems, the min is the safety stock. When stock hits the min, the order is already late. So set the trigger at the reorder point, not at the min.</li>
+      <li><strong>Max</strong> is the ceiling. It is the highest level you want on the shelf after a delivery arrives. A simple max is safety stock plus one order quantity.</li>
+    </ul>
+    <p>Example: safety stock is 480 pieces. The normal order quantity is 600 pieces. The max is 480 + 600 = <strong>1,080 pieces</strong>. If a delivery would push stock past 1,080, cut the order. The max stops slow overbuying, one order at a time.</p>
+
+    <h2>Common mistakes</h2>
+    <ul>
+      <li><strong>Set the point once and forget it.</strong> Lead times drift. Review the point when the supplier, the part, or the use rate changes.</li>
+      <li><strong>Ignore stock already on order.</strong> Count stock on hand plus stock on order before you order again. Two open orders for the same part is a common and costly error.</li>
+      <li><strong>Use one lead time for all suppliers.</strong> The same part from two suppliers has two lead times. Keep one reorder point per part and per source.</li>
+    </ul>
+
+    <section class="funnel" aria-label="Free check and tools">
+      <h2>Start with the free check</h2>
+      <p>The <strong>Supplier Overpay Check</strong> is a free worksheet. You enter a few invoice lines. It flags lines where the price looks high. It takes about ten minutes.</p>
+      <p><a class="btn" href="https://darkgyft0.gumroad.com/l/supplier-overpay-check">Get the free Supplier Overpay Check</a></p>
+      <p>For this topic, the matching tool is the <strong>Inventory Min/Max &amp; Reorder Calculator</strong>. It sets safety stock, reorder point, min, and max for your full part list. You enter use and lead time. It does the math for each part.</p>
+      <p><a class="btn secondary" href="https://payhip.com/b/I5LpV">Inventory Min/Max &amp; Reorder Calculator — $29</a></p>
+    </section>
+  </article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>By Michael Olson, Senior Strategic Buyer, 15+ years in manufacturing purchasing.</p>
+    <p><a href="index.html">Home</a> · <a href="safety-stock-calculator.html">Safety Stock</a> · <a href="reorder-point-calculator.html">Reorder Point</a> · <a href="landed-cost-calculator.html">Landed Cost</a> · <a href="supplier-scorecard-template.html">Supplier Scorecard</a> · <a href="price-creep.html">Price Creep</a></p>
+  </div>
+</footer>
+</body>
+</html>
